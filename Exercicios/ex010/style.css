@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    background-color: #FFFBDA;
+    color: #FFBB70;
+}
+h1{
+    text-align: center;
+    background-color: #ED9455;
+    color: #FFEC9E;
+}
+a{
+    color: #ED9455;
+}

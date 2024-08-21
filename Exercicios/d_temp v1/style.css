@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+    color: #E3CCAE;
+}
+
+#pagProx{
+    display: inline;
+    text-align: right;
+    margin-left: 512px;
+}
+#pagAnt{
+    display: inline;
+    text-align: left;
+}
+
+#menu{
+    background-color: #262A56;
+    margin: 0px 0px 30px;
+    height: 45px;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+h1{
+   color: #B8621B; 
+}
+h2{
+    color: #262A56;
+    background-color: #B8621B;
+    margin: 0px 0px 20px;
+}
+p{
+    margin: 20px;
+}
+
+a{
+    color: #262A56;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+abbr{
+    color: #262A56;
+}
+
+#guanab{
+    text-align: center;
+}

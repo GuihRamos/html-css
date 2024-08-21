@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Mídia</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abror esse site em vários dispositivos diferentes, ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!--max-width, siginifica o tamanho maxímo da página em pixels-->
+        <source media="(max-width:725px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--srcset, é onde colocamos o nome do arquivo da imagem que vamos querer.
+        type, Colocamos o tipo de MEDIA do arquivo que está no srcset.-->
+        <source media="(max-width:1025px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+        <!--A Tag <pictture> serve pra concentrar as diferentes resoluções de imagens do site.
+        Já a <source> serve para "escolher" a resolução de imagem de acordo com seus atributos (max-width, srcset, type).-->
+    </picture>
+    <!--OBS: As Tags tem que seguir uma ordem de acordo com imagem, senão vamos ter problemas e não serão mostradas as imagens na resolução certa para cada DISPOSITIVO. Os valores acimas tem que ir diminuindo de acordo com a imagem principal-->
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--Jeito 1 mais complexo-->
+
+    <!--O atributo preload tem 3 opções metadata, none e auto, respectivamente responsáveis por carregar somente o tamanho e informações do arquivo de áudio, somente carregar se o usuário der play no arquivo, e carregar tudo mesmo se usuário nunca der o play. -->
+    <audio preload="none" controls>
+        <source src="midia/Decimate - Jeremy Blake.mp3" type="audio/mpeg">
+        <source src="midia/pocpoc.ogg" type="audio/ogg">
+        <source src="midia/lalababaji.wav" type="audio/wav">
+    </audio>
+    <!--Esse método é o mais indicado pois o <source> é pra ter uma gama maior de de midia Types, pôs nem todo navegador é compativel com o MP3,nesse código o navegador vai carregar o audio compativel. OBS: ele vai segui a ordem dos SOURCE (vai verificar o MP3, OGG e o Wav)-->
+    <br>
+    <!--Jeito 2 mais simples-->
+    <audio src="midia/Decimate - Jeremy Blake.mp3" controls ></audio>
+    <!--
+        Dentro da Tag <audio> temos os parâmetros src (onde colocamos o local e nome do arquivo). Também temos o elemento controls, que exibe um painel na página para dar play no audio.
+        Tem também o elemento autoplay, que ao abrir a página toca o audio automaticamente. OBS: depende do navegador.
+    -->
+</body>
+</html>

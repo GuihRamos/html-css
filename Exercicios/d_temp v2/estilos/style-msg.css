@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Handmades';
+    src: url(/fontes/Handmades.otf) format('opentype'), url(/fontes/Handmades.ttf) format('truetype');
+}
+
+:root{
+    --font-titulo-msg: 'Handmades', 'Franklin Gothic Medium', 'sans-serif';
+    --font-paragrafos: 'Arial', 'sans-serif'
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: aqua;
+    min-height: 100px;
+    margin-bottom: 60px;
+}
+
+header h1#D-msg{
+    font-family:var(--font-titulo-msg) ;
+    text-align: center;
+    padding: 33px;
+}
+
+main{
+    background-color: cadetblue;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 24px;
+    border-radius: 5px;
+}
+main p{
+    font-family: var(--font-paragrafos);
+    margin: 30px;
+    padding: 30px 10px 10px 10px;
+    text-align: justify;
+}
+
+main a{
+    display: block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+footer{
+    margin-top: 348px;
+    background-color: aqua;
+    min-height: 30px;
+}
+
+footer p{
+    text-align: center;
+}

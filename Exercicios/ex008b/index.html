@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="faviconn.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte / Pré-formatação</h2>
+    <p>O comando &lt;code&gt; deixa as letras com o mesmo espaçamento. <br> 
+        Exemplos:
+    </p> 
+    <p>
+        Com a Tag: <code>document.getElementById('teste')</code><br>
+        Sem a tag: document.getElementById(teste)
+    </p>
+    <p>A tag &lt;pre&gt; é utilizada para deixar o que foi escrito no código igual na página.
+    </p>
+        <pre>
+            <code>
+    num = int(input('digite um número:'))
+    if num % 2 == 0:
+        print(f'O número{num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do Programa')
+            </code>
+        </pre>
+    <h2>Sitações Simples</h2>
+    <p>Utiliza-se a tag &lt;q&gt; para fazer citações simples. <br>
+        Como diria o pai de um amigo meu: <q>O computador é um burro muito rápido</q>
+        <!--Essa tag dá o efeito visual da mensagem entre aspas ("") e o HTML entende que o que está entre as tags é uma CITAÇÃO E NÂO SÒ UM EFEITO VISUAL. -->
+    </p>
+    <h2>Sitações Completas</h2>
+    <p>Utilize a tag &lt;blockquote&gt;. <br>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://youtu.be/22nd99SLgNA?si=LlpHBhMqmDOb-jq6">
+        A diferença entre elementos Inline e um bloco de texto é importante.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Utilize a tag &lt;abbr&gt;. <br>Estou Estundando <abbr title="Hyper Text Markup">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. estou adorando!</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em <abbr title="Hyper Text Markup">HTML</abbr></bdo></p>
+</body>
+</html>

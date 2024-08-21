@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: #EEEEEE;
+    color: #151515;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #C73659;
+}
+h2{
+    color: #A91D3A;
+    background-color: #151515;
+}
+p{
+    color: #C73659;
+}
+mark{
+    color: #C73659;
+    background-color: #151515;
+}
+sup{
+    color: #151515;
+}
+sub{
+    color: #151515;
+}

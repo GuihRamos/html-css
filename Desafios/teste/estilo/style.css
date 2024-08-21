@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url(/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'BebasNeue';
+    src: url(/fontes/BebasNeue-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+/* Paleta de Cores
+    #84e1ad   
+    #237749   
+    #50f79b  
+    #0e4b2a
+    #0f9248   
+    #dbf3e600  
+    #2fa866  
+*/
+
+:root{
+    --cor0: #84e1ad;
+    --cor1: #237749;
+    --cor2: #50f79b;
+    --cor3: #0e4b2a;
+    --cor4: #0f9248;
+    --cor5: #dbf3e600;
+    --cor6: #2fa866;
+    --cor7: whitesmoke;
+
+    --font-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --font-destaque: 'BebasNeue', 'cursive';
+    --font-android: 'Idroid', 'cursive';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+header{
+    background-color: var(--cor4);
+}
+
+header > h1{
+    color: whitesmoke;
+    font-family: var(--font-destaque);
+}
+nav{
+    background-color: var(--cor4);
+}
+
+main{
+    background-color: var(--cor7);
+}
+
+main h1{
+    color: var(--cor3);
+    font-family: var(--font-android);
+
+}
+
+main h2{
+    color: var(--cor3);
+    font-family: var(--font-android);
+}

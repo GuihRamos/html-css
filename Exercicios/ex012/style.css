@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-color: #FAF6F0;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    background-color: #F4DFC8;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F4EAE0;
+}

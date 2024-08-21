@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando hover</title>
+    <style>
+        div > p{
+            display: none;
+
+        }
+        div:hover > p{
+            display: block;
+            color: antiquewhite;
+            background-color: red;
+            width: 150px;
+        }
+        /* 
+            > = filho
+            # = id
+            . = class
+            : = pseudo class
+            :: = pseudo elements
+            então o que eu digo no código acima é que todo fiho p dentro de um div vai receber essa configuração.
+        */
+        div:hover{
+            color: red;
+            width: 130px;
+        }
+        a{
+            text-decoration: none;
+            color: lime;
+        }
+        a#ant::before{
+            content: '<-- ';
+        }
+        a#dep::after{
+            content: ' -->';
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de HOVER</h1>
+    <p>passe o mouse sobre o texto abaixo!</p>
+    <div>
+        Passe o mouse aqui
+        <p>Surprise! I'm here</p>
+    </div>
+    <p>Fim do Exemplo <br><br> <a id="ant" href="pseudo-class.html" target="_self" rel="prev"> previos page</a> <a id="dep" href="link.html" target="_self" rel="next">next page</a></p>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo como Usar id e class</title>
+    <style>
+        @charset "UTF-8";
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #Tprincipal{
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        #seta{
+            font-size: 1.3em;
+            font-weight: bold;
+            color: red;
+            text-align: justify;
+        }
+
+        #seta > p{
+            display: none;
+        }
+
+        #seta:hover > p{
+            display: block;
+            background-color: black;
+        }
+
+        .firstP{
+            text-indent: 15px;
+        }
+        .Ttabela{
+            text-align: center;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+        }
+
+        .Tabelas:hover{
+            background-color: blueviolet;
+        }
+
+        .Tabelas:active{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Tprincipal">Título</h1>
+    <h1>&lt;id&gt;</h1>
+    <p class="firstP">Tag usada para darmos uma indentificação a uma determinada tag, para ficar mais facil de estilizarmos a tag, assim só estilizando a tag com o 'id'.</p>
+    <div id="seta">
+        &rArr;OBS&lArr;
+        <p>
+            Só se deve utilizar um "id" APENAS UMA VEZ em uma PÁGINA, exemplo: <br>
+            Se criarmos um id com nome "título principal", O indicado é que só utilizemos essa id uma única vez na página do documento, o mesmo vale para as outras id.
+        </p>
+    </div>
+    <h1>&lt;Class&gt;</h1>
+    <p class="firstP">
+        Essa tag funciona parecida com o &lt;id&gt;, a diferença é que ela foi feita para utilizarmos mais de uma vez exemplo: <br>
+        se em um documento tivermos 3 parágrafos destaque, podemos dar a eles uma classe, e assim só estilizamos o class e os 3 parágrafos vão possuir a mesma estilização. 
+    </p>
+    <h1>Pseudo-Class</h1>
+    <p class="firstP">
+        Utilizado para determinar o estado de um elemento, se ele está (ativo, se o mouse está passando por cima, marcado, vazio e etc).
+    </p>
+    <div class="Tabelas">
+        <h2 class="Ttabela"> Alguns Pseudo-Class Importantes</h2>
+        <ul class="tabelas" type="square">
+            <li>hover &rArr; Seleciona onde vc passar o mouse por cima &lArr;</li>
+            <li>active &rArr; Seleciona onde vc está clicando</li>
+            <li>link &rArr; Seleciona o que já foi visitado (ex: links ancorados ao site) &lArr;</li>
+        </ul>
+    </div>
+    <h1>Pseudo-Elements</h1>
+
+    <p class="firstP">
+        Utilizado para especificar partes específicas de um elemento, como a primeira letra, a primeira linha, adicionar algo antes ou depois.
+    </p>
+    <div class="Tabelas">
+        <h2 class="Ttabela">Alguns Pseudo-Elements Importantes</h2>
+        <ul>
+            <li>before &rArr;  Adiciona algo antes do elemento &lArr;</li>
+            <li>after &rArr; Adiciona algo após o elemento &lArr;</li>
+            <li>first-line &rArr; Seleciona a primeira linha do elemento &lArr;</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    background-color: #212121;
+    color: #0D7377;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    background-color: #323232;
+    color: #14FFEC;
+}
+h2{
+    color: #212121;
+    background-color: #14FFEC;
+}
+h3{
+    text-align: center;
+    background-color: #323232;
+}
+h4{
+    color: #14FFEC;
+}
+abbr{
+    color: #14FFEC;
+}
