@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Eldes Cordel';
+    src: url(../fontes/EldesCordel-Demo.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Cordel';
+    src: url(../fontes/Cordel\ Encarnado\ II.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Sricha';
+    src: url(../fontes/Sriracha-Regular.ttf) format(truetype);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-titulo: 'Eldes Cordel', 'Serif';
+    --font-text: 'Sricha', 'Arial', 'Sans-serif';
+
+    --cor1: #e5c969;
+    --cor2: #fcb041;
+    --cor3: #882d1b;
+}
+
+body{
+    background-color: var(--cor2);
+}
+
+header > p > a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+header > p > a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+header > p > a:hover::after{
+    content: '\1F517';
+}
+
+header{
+    background-color: var(--cor3);
+}
+
+#titulo-principal{
+    font-family: var(--font-titulo);
+    font-size: 8lvw;
+    text-align: center;
+    padding: 4lvw 0lvw 0lvw 0lvw;
+    text-shadow: -2px 3px 7px #00000075;
+}
+
+header > p{
+    padding: 0lvw 0lvw 3lvw 0lvw;
+    font-family: 'Cordel';
+    font-size: 2.2lvw;
+    color: var(--cor2);
+    text-align: center;
+}
+
+section > p{
+    margin: 8lvw 2lvw;
+    padding: 1lvw;
+    font-family: var(--font-text);
+    font-size: 3.4lvw;
+}
+
+section#i-flor{
+    background: white url(../imagens/background001.jpg) center right/cover no-repeat fixed;
+    box-shadow: -1px 0px 4px 1px #0000002e;
+}
+#i-flor > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    border-radius: 4px;
+}
+
+section#i-livro{
+    background: white url(../imagens/background002.jpg) bottom left/cover no-repeat fixed;
+    box-shadow: -1px 0px 4px 1px #0000002e;
+}
+#i-livro > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    border-radius: 4px;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cor3);
+    font-family: 'Cordel';
+    font-size: 2lvw;
+}
+
+footer > p > a{
+    color: black;
+    text-decoration: none;
+    font-size: 2.2lvw;
+}
+
+footer > p > a:hover{
+    color: var(--cor2);
+}
