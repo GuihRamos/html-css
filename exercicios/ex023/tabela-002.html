@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 30px 30px;
+        }
+        
+        th{
+            border: 1px solid black;
+            font-size: 1.4em;
+            padding: 5px;
+            background-color: gray;
+            color: white;
+        }
+
+        td{
+            border: 1px solid black;
+            height: 50px;
+            width: 120px;
+        }
+
+        .position{
+            text-align: center;
+        }
+
+        .estado{
+            text-indent: 2px;
+        }
+        .pop{
+            text-indent: 32%;
+        }
+        
+        .popc{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- 
+        Anatomia para Tabelas Grandes
+        TABLE
+        THEAD
+            TR TD TH
+        TBODY
+            TR TD TH
+        TFOOT
+            TR TD TH
+    -->
+
+    <table>
+        <thead>
+            <th>Posição</th>
+            <th>Estado</th>
+            <th>População</th>
+            <th>% da pop. total</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="position"> 1 </td>
+                <td class="estado"> São Paulo</td>
+                <td class="pop"> 45 973 190 </td>
+                <td class="popc"> 21,88%</td>
+            </tr>
+            <tr>
+                <td class="position"> 2</td>
+                <td class="estado"> Minas Gerais</td>
+                <td class="pop"> 21 322 692</td>
+                <td class="popc"> 10,11%</td>
+            </tr>
+            <tr>
+                <td class="position"> 3</td>
+                <td class="estado"> Rio de Janeiro</td>
+                <td class="pop"> 17 219 679</td>
+                <td class="popc"> 7,91%</td>
+            </tr>
+            <tr>
+                <td class="position"> 4</td>
+                <td class="estado"> Bahia</td>
+                <td class="pop"> 14 850 513</td>
+                <td class="popc"> 6,96%</td>
+            </tr>
+            <tr>
+                <td class="position"> 5</td>
+                <td class="estado"> Paraná</td>
+                <td class="pop"> 11 824 665</td>
+                <td class="popc"> 5,64%</td>
+            </tr>
+            <tr>
+                <td class="position"> 6</td>
+                <td class="estado"> Rio Grande do Sul</td>
+                <td class="pop"> 11 229 915</td>
+                <td class="popc"> 5,36%</td>
+            </tr>
+            <tr>
+                <td class="position"> 7</td>
+                <td class="estado"> Pernambuco</td>
+                <td class="pop"> 9 539 029</td>
+                <td class="popc"> 4,46%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+    
+        </tfoot>
+    </table>
+</body>
+</html>
