@@ -21,36 +21,65 @@
 
         table{
             border-collapse: collapse;
-            margin: 30px 30px;
+            margin: 10px 30px;
+            width: 650px;
+            position: relative;  /* Acrescentado para FIXAR o CABEÇALHO*/
+        }
+
+        caption{
+            background-color: darkgrey;
+            padding: 5px;
+            border-radius: 3px 3px 0px 0px;
+            font-size: 1.3em;
+            color: darkslategray;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{         /* Deixando o CABEÇALHO FIXO */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){            /*Utilizado para APLICAR o EFEITO ZEBRADO*/
+            background-color: burlywood;
         }
         
         th{
             border: 1px solid black;
             font-size: 1.4em;
             padding: 5px;
-            background-color: gray;
-            color: white;
         }
 
         td{
             border: 1px solid black;
-            height: 50px;
-            width: 120px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
         }
 
         .position{
             text-align: center;
+            color: blue;
         }
 
         .estado{
-            text-indent: 2px;
+            padding-left: 3px;
         }
+
         .pop{
-            text-indent: 32%;
+            text-align: right;
+            padding-right: 3px;
+            color: dodgerblue;
         }
         
         .popc{
             text-align: center;
+            color: darkslategrey;
         }
 
     </style>
@@ -69,11 +98,14 @@
     -->
 
     <table>
+        <caption> População das Unidades Federativas</caption>
         <thead>
-            <th>Posição</th>
-            <th>Estado</th>
-            <th>População</th>
-            <th>% da pop. total</th>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
+            </tr>
         </thead>
 
         <tbody>
@@ -119,10 +151,138 @@
                 <td class="pop"> 9 539 029</td>
                 <td class="popc"> 4,46%</td>
             </tr>
+            <tr>
+                <td class="position"> 8</td>
+                <td class="estado"> Ceará</td>
+                <td class="pop"> 9 233 656</td>
+                <td class="popc"> 4,1%</td>
+            </tr>
+            <tr>
+                <td class="position"> 9</td>
+                <td class="estado"> Pará</td>
+                <td class="pop"> 8 664 306</td>
+                <td class="popc"> 4,1%</td>
+            </tr>
+            <tr>
+                <td class="position"> 10</td>
+                <td class="estado"> Santa Catarina</td>
+                <td class="pop"> 8 058 447</td>
+                <td class="popc"> 3,75%</td>
+            </tr>
+            <tr>
+                <td class="position"> 11</td>
+                <td class="estado"> Goiás</td>
+                <td class="pop"> 7 350 483</td>
+                <td class="popc"> 3,47%</td>
+            </tr>
+            <tr>
+                <td class="position"> 12</td>
+                <td class="estado"> Maranhão</td>
+                <td class="pop"> 7 010 960</td>
+                <td class="popc"> 3,34%</td>
+            </tr>
+            <tr>
+                <td class="position"> 13</td>
+                <td class="estado"> Amazonas</td>
+                <td class="pop"> 4 281 209</td>
+                <td class="popc"> 1,94%	</td>
+            </tr>
+            <tr>
+                <td class="position"> 14</td>
+                <td class="estado"> Paraíba</td>
+                <td class="pop"> 4 145 040</td>
+                <td class="popc"> 1,96%</td>
+            </tr>
+            <tr>
+                <td class="position"> 15</td>
+                <td class="estado"> Espírito Santo</td>
+                <td class="pop"> 4 102 129</td>
+                <td class="popc"> 1,89%</td>
+            </tr>
+            <tr>
+                <td class="position"> 16</td>
+                <td class="estado"> Mato Grosso</td>
+                <td class="pop"> 3 836 399</td>
+                <td class="popc"> 1,8%</td>
+            </tr>
+            <tr>
+                <td class="position"> 17</td>
+                <td class="estado"> Rio Grande do Norte</td>
+                <td class="pop"> 3 446 071</td>
+                <td class="popc"> 1,63%</td>
+            </tr>
+            <tr>
+                <td class="position"> 18</td>
+                <td class="estado"> Piauí</td>
+                <td class="pop"> 3 375 646</td>
+                <td class="popc"> 1,61%</td>
+            </tr>
+            <tr>
+                <td class="position"> 19</td>
+                <td class="estado"> Alagoas</td>
+                <td class="pop"> 3 220 104</td>
+                <td class="popc"> 1,54%</td>
+            </tr>
+            <tr>
+                <td class="position"> 20</td>
+                <td class="estado"> Distrito Federal</td>
+                <td class="pop"> 2 982 815</td>
+                <td class="popc"> 1,39%</td>
+            </tr>
+            <tr>
+                <td class="position"> 21</td>
+                <td class="estado"> Mato Grosso do Sul</td>
+                <td class="pop"> 2 901 895</td>
+                <td class="popc"> 1,36%</td>
+            </tr>
+            <tr>
+                <td class="position"> 22</td>
+                <td class="estado"> Sergipe</td>
+                <td class="pop"> 2 291 077</td>
+                <td class="popc"> 1,09%</td>
+            </tr>
+            <tr>
+                <td class="position"> 23</td>
+                <td class="estado"> Rondônia</td>
+                <td class="pop"> 1 746 227</td>
+                <td class="popc"> 0,78%</td>
+            </tr>
+            <tr>
+                <td class="position"> 24</td>
+                <td class="estado"> Tocantins</td>
+                <td class="pop"> 1 577 342</td>
+                <td class="popc"> 0,74%</td>
+            </tr>
+            <tr>
+                <td class="position"> 25</td>
+                <td class="estado"> Acre</td>
+                <td class="pop"> 880 631</td>
+                <td class="popc"> 0,41%</td>
+            </tr>
+            <tr>
+                <td class="position"> 26</td>
+                <td class="estado"> Amapá</td>
+                <td class="pop"> 802 837</td>
+                <td class="popc"> 0,36%</td>
+            </tr>
+            <tr>
+                <td class="position"> 27</td>
+                <td class="estado"> Roraima</td>
+                <td class="pop"> 716 793</td>
+                <td class="popc"> 0,31%</td>
+            </tr>
         </tbody>
         <tfoot>
     
         </tfoot>
     </table>
+    <!-- Lorem Adicionado para TEXTAR o CABEÇALHO fixo da TABELA-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, culpa consequuntur ratione cupiditate natus dignissimos asperiores repellat autem quae quo inventore a debitis. Aliquid repellat quaerat odio architecto corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia! Accusamus placeat blanditiis odit? Eaque nesciunt facere suscipit quis? Obcaecati provident neque ipsum vel tenetur placeat, quasi iure saepe libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate aspernatur rerum corrupti rem pariatur, veniam facilis accusantium ex reprehenderit accusamus autem optio voluptatum doloremque nemo ut dolores aliquid distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil qui voluptate odio maxime sint consequuntur quod aspernatur similique illum, nobis deserunt suscipit delectus, labore tempore laborum doloremque reiciendis eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, culpa consequuntur ratione cupiditate natus dignissimos asperiores repellat autem quae quo inventore a debitis. Aliquid repellat quaerat odio architecto corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia! Accusamus placeat blanditiis odit? Eaque nesciunt facere suscipit quis? Obcaecati provident neque ipsum vel tenetur placeat, quasi iure saepe libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate aspernatur rerum corrupti rem pariatur, veniam facilis accusantium ex reprehenderit accusamus autem optio voluptatum doloremque nemo ut dolores aliquid distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil qui voluptate odio maxime sint consequuntur quod aspernatur similique illum, nobis deserunt suscipit delectus, labore tempore laborum doloremque reiciendis eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, culpa consequuntur ratione cupiditate natus dignissimos asperiores repellat autem quae quo inventore a debitis. Aliquid repellat quaerat odio architecto corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia! Accusamus placeat blanditiis odit? Eaque nesciunt facere suscipit quis? Obcaecati provident neque ipsum vel tenetur placeat, quasi iure saepe libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate aspernatur rerum corrupti rem pariatur, veniam facilis accusantium ex reprehenderit accusamus autem optio voluptatum doloremque nemo ut dolores aliquid distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil qui voluptate odio maxime sint consequuntur quod aspernatur similique illum, nobis deserunt suscipit delectus, labore tempore laborum doloremque reiciendis eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, culpa consequuntur ratione cupiditate natus dignissimos asperiores repellat autem quae quo inventore a debitis. Aliquid repellat quaerat odio architecto corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia! Accusamus placeat blanditiis odit? Eaque nesciunt facere suscipit quis? Obcaecati provident neque ipsum vel tenetur placeat, quasi iure saepe libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate aspernatur rerum corrupti rem pariatur, veniam facilis accusantium ex reprehenderit accusamus autem optio voluptatum doloremque nemo ut dolores aliquid distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil qui voluptate odio maxime sint consequuntur quod aspernatur similique illum, nobis deserunt suscipit delectus, labore tempore laborum doloremque reiciendis eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, culpa consequuntur ratione cupiditate natus dignissimos asperiores repellat autem quae quo inventore a debitis. Aliquid repellat quaerat odio architecto corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia! Accusamus placeat blanditiis odit? Eaque nesciunt facere suscipit quis? Obcaecati provident neque ipsum vel tenetur placeat, quasi iure saepe libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate aspernatur rerum corrupti rem pariatur, veniam facilis accusantium ex reprehenderit accusamus autem optio voluptatum doloremque nemo ut dolores aliquid distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil qui voluptate odio maxime sint consequuntur quod aspernatur similique illum, nobis deserunt suscipit delectus, labore tempore laborum doloremque reiciendis eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, culpa consequuntur ratione cupiditate natus dignissimos asperiores repellat autem quae quo inventore a debitis. Aliquid repellat quaerat odio architecto corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia! Accusamus placeat blanditiis odit? Eaque nesciunt facere suscipit quis? Obcaecati provident neque ipsum vel tenetur placeat, quasi iure saepe libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate aspernatur rerum corrupti rem pariatur, veniam facilis accusantium ex reprehenderit accusamus autem optio voluptatum doloremque nemo ut dolores aliquid distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil qui voluptate odio maxime sint consequuntur quod aspernatur similique illum, nobis deserunt suscipit delectus, labore tempore laborum doloremque reiciendis eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex, culpa consequuntur ratione cupiditate natus dignissimos asperiores repellat autem quae quo inventore a debitis. Aliquid repellat quaerat odio architecto corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officia! Accusamus placeat blanditiis odit? Eaque nesciunt facere suscipit quis? Obcaecati provident neque ipsum vel tenetur placeat, quasi iure saepe libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptate aspernatur rerum corrupti rem pariatur, veniam facilis accusantium ex reprehenderit accusamus autem optio voluptatum doloremque nemo ut dolores aliquid distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil qui voluptate odio maxime sint consequuntur quod aspernatur similique illum, nobis deserunt suscipit delectus, labore tempore laborum doloremque reiciendis eum.</p>
 </body>
 </html>
